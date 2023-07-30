@@ -31,5 +31,9 @@ else:
     total_incorrect=total_incorrect+1    
 
 
-print("total correct:", total_correct)    
-print("total incorrect:", total_incorrect)    
+print("|total correct:", total_correct)    
+print("|total incorrect:", total_incorrect)    
+if total_correct>=3:
+    print("acceptable")
+else:
+    print("unacceptable")
