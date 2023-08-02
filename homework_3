@@ -20,6 +20,16 @@ def divide(n1,n2):
         print("divide::",n1/n2)
     time.sleep(1.5)
 
+def Exclamation_mark(n1,n2):
+        print("factorial for n1:",math.factorial(n1))
+        print("factorial for n2:",math.factorial(n2))
+        time.sleep(1.5)
+        
+def sqrt(n1,n2):
+	print("sqrt for n1:",math.sqrt(n1))
+	print("sqrt for n2:",math.sqrt(n2))
+	time.sleep(1.5)
+			
 n1=float(input("enter num1: "))
 operation=input("math:")
 n2=float(input("enter num2: "))
@@ -32,6 +42,9 @@ elif operation=="*":
     multiply(n1,n2)
 elif operation=="/":
     divide(n1,n2)
+elif operation=="!":
+    Exclamation_mark(n1,n2)
+elif operation=="sqrt":
+    sqrt(n1,n2)
 else:
     print("SyntaxError")
-print(math.sqrt(4))
