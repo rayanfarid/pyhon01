@@ -14,10 +14,10 @@ def s2():
          t.color(color)
 def s3():
     t.forward(radius)
-    t.left(90)
-    t.forward(radius)
-    t.left(90)
+    t.left(120)
     t.forward(radius+radius/2)
+    t.left(120)
+    t.forward(radius)
 def s4():
     randoms=random.choice(s1(),s2(),s3())
     print(randoms)
