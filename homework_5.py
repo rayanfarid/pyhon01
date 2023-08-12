@@ -32,9 +32,8 @@ list_of_answers=[]
 v1="z"
 while v1!="a" or v1!="A" or v1!="b" or v1!="B" or v1!="c" or v1!="C" or v1!="d" or v1!="D" or v1!="e" or v1!="E" or v1!="f" or v1!="F" or v1!="g" or v1!="G":
     v1=q_1()
-    
-    print(colored("the answer is not avalable","red"))
-   
+    if v1!="a" or v1!="A" or v1!="b" or v1!="B" or v1!="c" or v1!="C" or v1!="d" or v1!="D" or v1!="e" or v1!="E" or v1!="f" or v1!="F" or v1!="g" or v1!="G":
+        print(colored("the answer is not avalable","red"))
 list_of_answers.append(v1)
 v2=q_2()
 list_of_answers.append(v2)
