@@ -1,4 +1,4 @@
-from termcolor import colored
+from termcolor import colored 
 def q_1():
     return input("1. Which of the following most closely describes your personality?\nA.Energetic and forceful\nB.Thoughtful and considerate\nC.Healthy and friendly\nD.Sociable and people person\nE.Caring and helpful\nF.Spiritual and humble\nG.Tender and sympathetic\n")
 def q_2():
@@ -20,14 +20,15 @@ def q_9():
 def q_10():
     return input("10. An overall statement about yourself:\na) I am sometimes blunt, but only because I wish to be honest.\nb) I love adventure and thrilling activities, even if they’re a little dangerous.\nc) Activities like dancing and exercise can be fun. Actually, they are my favorites.\nd) I am an organized person who loves to be intellectually stimulated.\ne) Material possessions are not my priority.\nf) I sometimes feel like a fish out of water, especially in a large group.\ng) The environment is a major concern of mine.\n")
 
-a=0
-b=0 
-c=0 
-d=0 
-e=0 
-f=0 
-g=0
-
+w={
+    "a":0,
+    "b":0,
+    "c":0,
+    "d":0,
+    "e":0,
+    "f":0,
+    "g":0
+}
 list_of_answers=[]
 v1="z"
 while v1!="a" and v1!="b" and v1!="c" and v1!="d" and v1!="e" and v1!="f" and v1!="g":
@@ -88,41 +89,31 @@ while v10!="a" and v10!="b" and v10!="c" and v10!="d" and v10!="e" and v10!="f" 
     v10=q_10().lower()
     if v10!="a" and v10!="b" and v10!="c" and v10!="d" and v10!="e" and v10!="f" and v10!="g":
         print(colored("the answer is not avalable","red"))
-list_of_answers.append(v10)    
-for q1 in list_of_answers:
-        if q1=="a":
-            a=a+1
-        elif q1=="b":
-            b=b+1
-        elif q1=="c":
-            c=c+1
-        elif q1=="d":
-            d=d+1
-        elif q1=="e":
-            e=e+1
-        elif q1=="f":
-            f=f+1
-        elif q1=="g":
-            g=g+1
-print("===============================================================================")
-if a>b and a>c and a>d and a>e and a>f and a>g:
+list_of_answers.append(v10)     
+for q1 in list_of_answers: 
+    w[q1]=w[q1]+1
+    #print(q1)
+    #print(w)
+#print(w)
+print("========================================================================================================")
+if w["a"]>w["b"] and w["a"]>w["c"] and w["a"]>w["d"] and w["a"]>w["e"] and w["a"]>w["f"] and w["a"]>w["g"]:
     print("Your aura is predominantly red.")
-    print("Red: Strong-willed, straightforward, energetic, forceful, well-\ngrounded, hard worker, team player, active, competitive, realistic,\n impulsive and overwhelmed by change. If a health issue arises, it\nwill be due to anxiety.")
-elif b>a and b>c and b>d and b>e and b>f and b>g:
+    print(colored("Red: Strong-willed, straightforward, energetic, forceful, well-\ngrounded, hard worker, team player, active, competitive, realistic,\n impulsive and overwhelmed by change. If a health issue arises, it\nwill be due to anxiety.","green"))
+elif w["b"]>w["a"] and w["b"]>w["c"] and w["b"]>w["d"] and w["b"]>w["e"] and w["b"]>w["f"] and w["b"]>w["g"]:
     print("Your aura is predominantly orange.")
-    print("Orange: Courageous, adventurous, thoughtful, considerate, self-\nassured, detail-oriented, and sometimes a lack in self-discipline.\nHealth issues usually stem from the kidney or reproductive organs.")
-elif c>a and c>b and c>d and c>e and c>f and c>g:
+    print(colored("Orange: Courageous, adventurous, thoughtful, considerate, self-\nassured, detail-oriented, and sometimes a lack in self-discipline.\nHealth issues usually stem from the kidney or reproductive organs.","green"))
+elif w["c"]>w["a"] and w["c"]>w["b"] and w["c"]>w["d"] and w["c"]>w["e"] and w["c"]>w["f"] and w["c"]>w["g"]:
     print("Your aura is predominantly yellow.")
-    print("Yellow: Laid-back, playful, creative, friendly, optimistic, avoids\nconflict, feelings are easily hurt, timid and mental alertness. Health\nissues relate to the spleen.")
-elif d>a and d>b and d>c and d>e and d>f and d>g:
+    print(colored("Yellow: Laid-back, playful, creative, friendly, optimistic, avoids\nconflict, feelings are easily hurt, timid and mental alertness. Health\nissues relate to the spleen.","green"))
+elif w["d"]>w["a"] and w["d"]>w["b"] and w["d"]>w["c"] and w["d"]>w["e"] and w["d"]>w["f"] and w["d"]>w["g"]:
     print("Your aura is predominantly green.")
-    print("Green: Social, love people, animals and nature, good\ncommunicator, perfectionist, quick-witted, organizer, impatient,\ntrustworthy, nurturing. Lungs are the indicated health issue.")
-elif e>a and e>b and e>c and e>d and e>f and e>g:
+    print(colored("Green: Social, love people, animals and nature, good\ncommunicator, perfectionist, quick-witted, organizer, impatient,\ntrustworthy, nurturing. Lungs are the indicated health issue.","green"))
+elif w["e"]>w["a"] and w["e"]>w["b"] and w["e"]>w["c"] and w["e"]>w["d"] and w["e"]>w["f"] and w["e"]>w["g"]:
     print("Your aura is predominantly blue.")
-    print("Blue: Helpful, caring, spiritual, intuitive, generally at peace and\ncontent, understanding, peacemaker, steadfast, freethinker. Some\nbelieve that problems a person with this aura color may\nexperience relates to the throat or thyroid.")
-elif f>a and f>b and f>c and f>d and f>e and f>g:
+    print(colored("Blue: Helpful, caring, spiritual, intuitive, generally at peace and\ncontent, understanding, peacemaker, steadfast, freethinker. Some\nbelieve that problems a person with this aura color may\nexperience relates to the throat or thyroid.","green"))
+elif w["f"]>w["a"] and w["f"]>w["b"] and w["f"]>w["c"] and w["f"]>w["d"] and w["f"]>w["e"] and w["f"]>w["g"]:
     print("Your aura is predominantly indigo.")
-    print("Indigo: Imaginative, daydreamer, curious, deep inner feelings,\nsometimes lacks self-esteem, gentle, unassuming, introvert, calm\nand modest. The eyes are the concern for indigo-aura people.")
-elif g>a and g>b and g>c and g>d and g>e and g>f:
+    print(colored("Indigo: Imaginative, daydreamer, curious, deep inner feelings,\nsometimes lacks self-esteem, gentle, unassuming, introvert, calm\nand modest. The eyes are the concern for indigo-aura people.","green"))
+elif w["g"]>w["a"] and w["g"]>w["b"] and w["g"]>w["c"] and w["g"]>w["d"] and w["g"]>w["e"] and w["g"]>w["f"]:
     print("Your aura is predominantly violet.")
-    print("Violet: Idealistic, most sensitive and wisest of the colors, a seeker\nof truth, independent, intellectual, extroverted and authoritative.\nSometimes people with a violet aura color have psychic power.\nViolet relates to the pineal gland and nervous system.")
+    print(colored("Violet: Idealistic, most sensitive and wisest of the colors, a seeker\nof truth, independent, intellectual, extroverted and authoritative.\nSometimes people with a violet aura color have psychic power.\nViolet relates to the pineal gland and nervous system.","green"))
