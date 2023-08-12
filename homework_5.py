@@ -30,44 +30,99 @@ g=0
 
 list_of_answers=[]
 v1="z"
-while v1!="a" or v1!="A" or v1!="b" or v1!="B" or v1!="c" or v1!="C" or v1!="d" or v1!="D" or v1!="e" or v1!="E" or v1!="f" or v1!="F" or v1!="g" or v1!="G":
-    v1=q_1()
-    if v1!="a" or v1!="A" or v1!="b" or v1!="B" or v1!="c" or v1!="C" or v1!="d" or v1!="D" or v1!="e" or v1!="E" or v1!="f" or v1!="F" or v1!="g" or v1!="G":
+while v1!="a" and v1!="b" and v1!="c" and v1!="d" and v1!="e" and v1!="f" and v1!="g":
+    v1=q_1().lower()
+    if v1!="a" and v1!="b" and v1!="c" and v1!="d" and v1!="e" and v1!="f" and v1!="g":
         print(colored("the answer is not avalable","red"))
 list_of_answers.append(v1)
-v2=q_2()
+v2="z"
+while v2!="a" and v2!="b" and v2!="c" and v2!="d" and v2!="e" and v2!="f" and v2!="g":
+    v2=q_2().lower()
+    if v2!="a" and v2!="b" and v2!="c" and v2!="d" and v2!="e" and v2!="f" and v2!="g":
+        print(colored("the answer is not avalable","red"))
 list_of_answers.append(v2)
-q3=q_3()
-list_of_answers.append(q3)
-q4=q_4()
-list_of_answers.append(q4)
-q5=q_5()
-list_of_answers.append(q5)
-q6=q_6()
-list_of_answers.append(q6)
-q7=q_7()
-list_of_answers.append(q7)
-q8=q_8()
-list_of_answers.append(q8)
-q9=q_9()
-list_of_answers.append(q9)
-q10=q_10()
-list_of_answers.append(q10)    
+v3="z"
+while v3!="a" and v3!="b" and v3!="c" and v3!="d" and v3!="e" and v3!="f" and v3!="g":
+    v3=q_3().lower()
+    if v3!="a" and v3!="b" and v3!="c" and v3!="d" and v3!="e" and v3!="f" and v3!="g":
+        print(colored("the answer is not avalable","red"))
+list_of_answers.append(v3)
+v4="z"
+while v4!="a" and v4!="b" and v4!="c" and v4!="d" and v4!="e" and v4!="f" and v4!="g":
+    v4=q_4().lower()
+    if v4!="a" and v4!="b" and v4!="c" and v4!="d" and v4!="e" and v4!="f" and v4!="g":
+        print(colored("the answer is not avalable","red"))
+list_of_answers.append(v4)
+v5="z"
+while v5!="a" and v5!="b" and v5!="c" and v5!="d" and v5!="e" and v5!="f" and v5!="g":
+    v5=q_5().lower()
+    if v5!="a" and v5!="b" and v5!="c" and v5!="d" and v5!="e" and v5!="f" and v5!="g":
+        print(colored("the answer is not avalable","red"))
+list_of_answers.append(v5)
+v6="z"
+while v6!="a" and v6!="b" and v6!="c" and v6!="d" and v6!="e" and v6!="f" and v6!="g":
+    v6=q_6().lower()
+    if v6!="a" and v6!="b" and v6!="c" and v6!="d" and v6!="e" and v6!="f" and v6!="g":
+        print(colored("the answer is not avalable","red"))
+list_of_answers.append(v6)
+v7="z"
+while v7!="a" and v7!="b" and v7!="c" and v7!="d" and v7!="e" and v7!="f" and v7!="g":
+    v7=q_7().lower()
+    if v7!="a" and v7!="b" and v7!="c" and v7!="d" and v7!="e" and v7!="f" and v7!="g":
+        print(colored("the answer is not avalable","red"))
+list_of_answers.append(v7)
+v8="z"
+while v8!="a" and v8!="b" and v8!="c" and v8!="d" and v8!="e" and v8!="f" and v8!="g":
+    v8=q_8().lower()
+    if v8!="a" and v8!="b" and v8!="c" and v8!="d" and v8!="e" and v8!="f" and v8!="g":
+        print(colored("the answer is not avalable","red"))
+list_of_answers.append(v8)
+v9="z"
+while v9!="a" and v9!="b" and v9!="c" and v9!="d" and v9!="e" and v9!="f" and v9!="g":
+    v9=q_9().lower()
+    if v9!="a" and v9!="b" and v9!="c" and v9!="d" and v9!="e" and v9!="f" and v9!="g":
+        print(colored("the answer is not avalable","red"))
+list_of_answers.append(v9)
+v10="z"
+while v10!="a" and v10!="b" and v10!="c" and v10!="d" and v10!="e" and v10!="f" and v10!="g":
+    v10=q_10().lower()
+    if v10!="a" and v10!="b" and v10!="c" and v10!="d" and v10!="e" and v10!="f" and v10!="g":
+        print(colored("the answer is not avalable","red"))
+list_of_answers.append(v10)    
 for q1 in list_of_answers:
-        print(q1)
-        if q1=="A" or q1=="a":
+        if q1=="a":
             a=a+1
-        elif q1=="B" or q1=="b":
+        elif q1=="b":
             b=b+1
-        elif q1=="C" or q1=="c":
+        elif q1=="c":
             c=c+1
-        elif q1=="D" or q1=="d":
+        elif q1=="d":
             d=d+1
-        elif q1=="E" or q1=="e":
+        elif q1=="e":
             e=e+1
-        elif q1=="F" or q1=="f":
+        elif q1=="f":
             f=f+1
-        elif q1=="G" or q1=="g":
+        elif q1=="g":
             g=g+1
-
-print(a,b,c,d,e,f,g)
+print("===============================================================================")
+if a>b and a>c and a>d and a>e and a>f and a>g:
+    print("Your aura is predominantly red.")
+    print("Red: Strong-willed, straightforward, energetic, forceful, well-\ngrounded, hard worker, team player, active, competitive, realistic,\n impulsive and overwhelmed by change. If a health issue arises, it\nwill be due to anxiety.")
+elif b>a and b>c and b>d and b>e and b>f and b>g:
+    print("Your aura is predominantly orange.")
+    print("Orange: Courageous, adventurous, thoughtful, considerate, self-\nassured, detail-oriented, and sometimes a lack in self-discipline.\nHealth issues usually stem from the kidney or reproductive organs.")
+elif c>a and c>b and c>d and c>e and c>f and c>g:
+    print("Your aura is predominantly yellow.")
+    print("Yellow: Laid-back, playful, creative, friendly, optimistic, avoids\nconflict, feelings are easily hurt, timid and mental alertness. Health\nissues relate to the spleen.")
+elif d>a and d>b and d>c and d>e and d>f and d>g:
+    print("Your aura is predominantly green.")
+    print("Green: Social, love people, animals and nature, good\ncommunicator, perfectionist, quick-witted, organizer, impatient,\ntrustworthy, nurturing. Lungs are the indicated health issue.")
+elif e>a and e>b and e>c and e>d and e>f and e>g:
+    print("Your aura is predominantly blue.")
+    print("Blue: Helpful, caring, spiritual, intuitive, generally at peace and\ncontent, understanding, peacemaker, steadfast, freethinker. Some\nbelieve that problems a person with this aura color may\nexperience relates to the throat or thyroid.")
+elif f>a and f>b and f>c and f>d and f>e and f>g:
+    print("Your aura is predominantly indigo.")
+    print("Indigo: Imaginative, daydreamer, curious, deep inner feelings,\nsometimes lacks self-esteem, gentle, unassuming, introvert, calm\nand modest. The eyes are the concern for indigo-aura people.")
+elif g>a and g>b and g>c and g>d and g>e and g>f:
+    print("Your aura is predominantly violet.")
+    print("Violet: Idealistic, most sensitive and wisest of the colors, a seeker\nof truth, independent, intellectual, extroverted and authoritative.\nSometimes people with a violet aura color have psychic power.\nViolet relates to the pineal gland and nervous system.")
