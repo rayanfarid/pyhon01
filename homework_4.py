@@ -18,8 +18,11 @@ def s3():
     t.forward(radius+radius/2)
     t.left(120)
     t.forward(radius)
+s3=s3()
+s2=s2()
+s1=s1()
 def s4():
-    randoms=random.choice(s1(),s2(),s3())
+    randoms=random.choice(s1,s2,s3)
     print(randoms)
 
 if select==1:
@@ -32,3 +35,4 @@ elif select==4:
     s4()
 else:
     print("SentaxError")
+turtle.done
