@@ -35,4 +35,4 @@ elif select==4:
     s4()
 else:
     print("SentaxError")
-turtle.done
+turtle.done 
