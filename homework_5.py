@@ -117,3 +117,21 @@ elif w["f"]>w["a"] and w["f"]>w["b"] and w["f"]>w["c"] and w["f"]>w["d"] and w["
 elif w["g"]>w["a"] and w["g"]>w["b"] and w["g"]>w["c"] and w["g"]>w["d"] and w["g"]>w["e"] and w["g"]>w["f"]:
     print("Your aura is predominantly violet.")
     print(colored("Violet: Idealistic, most sensitive and wisest of the colors, a seeker\nof truth, independent, intellectual, extroverted and authoritative.\nSometimes people with a violet aura color have psychic power.\nViolet relates to the pineal gland and nervous system.","green"))
+else:
+    all_difs={}
+    all_difs["a"]=colored("Red: Strong-willed, straightforward, energetic, forceful, well-\ngrounded, hard worker, team player, active, competitive, realistic,\n impulsive and overwhelmed by change. If a health issue arises, it\nwill be due to anxiety.","green")
+    all_difs["b"]=colored("Orange: Courageous, adventurous, thoughtful, considerate, self-\nassured, detail-oriented, and sometimes a lack in self-discipline.\nHealth issues usually stem from the kidney or reproductive organs.","green")
+    all_difs["c"]=colored("Yellow: Laid-back, playful, creative, friendly, optimistic, avoids\nconflict, feelings are easily hurt, timid and mental alertness. Health\nissues relate to the spleen.","green")
+    all_difs["d"]=colored("Green: Social, love people, animals and nature, good\ncommunicator, perfectionist, quick-witted, organizer, impatient,\ntrustworthy, nurturing. Lungs are the indicated health issue.","green")
+    all_difs["e"]=colored("Blue: Helpful, caring, spiritual, intuitive, generally at peace and\ncontent, understanding, peacemaker, steadfast, freethinker. Some\nbelieve that problems a person with this aura color may\nexperience relates to the throat or thyroid.","green")
+    all_difs["f"]=colored("Indigo: Imaginative, daydreamer, curious, deep inner feelings,\nsometimes lacks self-esteem, gentle, unassuming, introvert, calm\nand modest. The eyes are the concern for indigo-aura people.","green")
+    all_difs["g"]=colored("Violet: Idealistic, most sensitive and wisest of the colors, a seeker\nof truth, independent, intellectual, extroverted and authoritative.\nSometimes people with a violet aura color have psychic power.\nViolet relates to the pineal gland and nervous system.","green")
+
+    print("your answers are evenly divided between two or three colors, this means your aura color fluctuates between those particular colors, or you may always have a combination of those colors in your aura.")
+    one_of_equal=(list(dict(sorted(w.items(), key=lambda item: item[1])).values())[-1])
+    for k in w.keys():
+        if w[k]==one_of_equal:
+            print(all_difs[k])
+            print("===========================================================================\n")
+
+
